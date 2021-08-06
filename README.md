@@ -40,8 +40,8 @@
 Using LazyDB in C# is really easy, you only need to create a Database object!
 
 ```c#
-Database db = new Database("youtproject.lazydb.com", 42600, delegate (Object s) {
-    Console.WriteLine("Connection to your LazyDB server established!");
+Database db = new Database("youtproject.lazydb.com", 42600, delegate (object s) {
+    Debug.Log("Connection to your LazyDB server established!");
 });
 ```
 
@@ -49,11 +49,11 @@ Once you initialized the database, you can use any command, here is an example o
 
 ```c#
 callback.success = delegate (Newtonsoft.Json.Linq.JToken s) {
-    Console.WriteLine(s);
+    Debug.Log(s);
 };
 
 callback.fail = delegate (Newtonsoft.Json.Linq.JToken s) {
-    Console.WriteLine(s);
+    Debug.Log(s);
 };
 
 db.connect("email", "password", callback);
