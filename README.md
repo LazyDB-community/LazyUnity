@@ -7,7 +7,7 @@
   <h3 align="center">LazyCSharp</h3>
 
   <p align="center">
-    Connector for LazyDB in CSharp.
+    Connector for LazyDB in Unity.
     <br/>
     <br/>
     <a href="https://github.com/LazyDB-community/LazyCSharp"><strong>Explore the docs »</strong></a>
